@@ -9,7 +9,7 @@ Espero y les sea de ayuda o de motivacion a adentrarse en estas tecnologias.
 # --- Tecnologias ---
 
  - Framework: FastAPI
- - Base de datos: MongoDB
+ - Data Base: MongoDB
  - Authentication Security: Token JWT, OAuth2
 
 
