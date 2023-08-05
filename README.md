@@ -11,6 +11,6 @@ Espero y les sea de ayuda o de motivacion a adentrarse en estas tecnologias.
  - Framework: FastAPI
  - Data Base: MongoDB
  - Authentication Security: Token JWT, OAuth2
-
+ - Depliegue: Delta
 
 
