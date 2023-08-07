@@ -1,4 +1,4 @@
-# API de los usuarios(con CRUD)
+# API de los usuarios Sin base de datos
 
 from fastapi import APIRouter, HTTPException
 from pydantic import BaseModel

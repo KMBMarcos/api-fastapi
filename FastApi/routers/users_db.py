@@ -1,4 +1,4 @@
-# API de los usuarios(con CRUD)
+# API de los usuarios con MongoDB
 
 from fastapi import APIRouter, HTTPException,status
 from db.models.user import User
