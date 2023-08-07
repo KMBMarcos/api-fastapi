@@ -2,8 +2,10 @@
 
 # Documentacion de FastAPi: https://fastapi.tiangolo.com/es/
 
-# Documentacion Swagger url local: http://127.0.0.1:8000/docs
-# Documentacion ReDoc Url local: http://127.0.0.1:8000/redoc
+# Documentacion Swagger url local: https://fastapi-1-z9027211.deta.app/docs
+# Documentacion ReDoc Url local: https://fastapi-1-z9027211.deta.app/redoc
+
+# Actualizar app en Deta: space push
 
 # Instala FastAPI oficial: pip install "fastapi[all]"
 
@@ -18,6 +20,7 @@ app = FastAPI(prefix="/main",
                 tags=["main"],
                 responses={404:{"message":"No encontrado"}})
 
+
 # routers
 app.include_router(products.router) # router de products
 app.include_router(users.router) # router de users
@@ -30,17 +33,16 @@ app.mount("/static",
           )
 
 
-# URl local: http://127.0.0.1:8000
+# URl: https://fastapi-1-z9027211.deta.app
 
 @app.get("/")
 async def root():
     return "Hola FastAPI!!"
 
-# Url local: http://127.0.0.1:8000/
+# Url: https://fastapi-1-z9027211.deta.app
 
 @app.get("/url")
 async def root():
     return { "url_curso":"https://jayhcourse.net/python" }
 
-# Inicia el server: uvicorn usersAPI:app --reload
-# Detener el server: CTR + C
+
