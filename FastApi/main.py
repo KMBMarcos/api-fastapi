@@ -2,8 +2,8 @@
 
 # Documentacion de FastAPi: https://fastapi.tiangolo.com/es/
 
-# Documentacion Swagger url local: https://fastapi-1-z9027211.deta.app/docs
-# Documentacion ReDoc Url local: https://fastapi-1-z9027211.deta.app/redoc
+# Documentacion Swagger url local: https://fastapi-3-z9027211.deta.app/docs
+# Documentacion ReDoc Url local: https://fastapi-3-z9027211.deta.app/redoc
 
 # Actualizar app en Deta: space push
 
@@ -33,13 +33,13 @@ app.mount("/static",
           )
 
 
-# URl: https://fastapi-1-z9027211.deta.app
+# URl: https://fastapi-3-z9027211.deta.app/
 
 @app.get("/")
 async def root():
     return "Hola FastAPI!!"
 
-# Url: https://fastapi-1-z9027211.deta.app
+# Url: https://fastapi-3-z9027211.deta.app/
 
 @app.get("/url")
 async def root():
