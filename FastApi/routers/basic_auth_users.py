@@ -3,6 +3,7 @@
 from fastapi import APIRouter,HTTPException,Depends,status # "Depends" indica la dependencia de alguna entidad 
 from pydantic import BaseModel 
 
+
 # "OAuth2PasswordBearerm" es para hacer la autenticacion del usuario
 # "OAuth2PasswordRequestForm" es para enviar el usuario y la contraseña del usuario para autenticar
 from fastapi.security import OAuth2PasswordBearer, OAuth2PasswordRequestForm
