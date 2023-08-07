@@ -24,7 +24,9 @@ ACCESS_TOKEN_DURATION = 1
 
 SECRET = "qB&T!%AE$EHfDj$wxEzgYafoVPDt%WuS@o^jX#uUWxB^eGQCmghTC$TGVKHGVhg@fMS,FHG@%*@^faUY%&g&"
 
-router = APIRouter()
+router = APIRouter(prefix="/jwtauth",
+                   tags=["jwtauth"],
+                   responses={status.HTTP_404_NOT_FOUND:{"message":"No encontrado"}})
 
 oauth2 = OAuth2PasswordBearer(tokenUrl="login")
 
