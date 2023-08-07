@@ -11,9 +11,10 @@ Espero y les sea de ayuda o de motivacion a adentrarse en estas tecnologias.
 
 # --- Tecnologias ---
 
- - Framework: FastAPI
- - Data Base: MongoDB
- - Authentication Security: Token JWT, OAuth2
- - Depliegue: Delta
+* Authentication Security: Token JWT, OAuth2
+* [Visual Studio Code](https://code.visualstudio.com/): El editor que estoy usando
+* [FastAPI](https://fastapi.tiangolo.com/es/): El framework para crear nuestra API Backend
+* [MongoDB](https://www.mongodb.com/): La base de datos que utiliza nuestro backend
+* [Deta](https://www.deta.sh/): Para desplegar nuestra API en la nube
 
 
