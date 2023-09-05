@@ -1,0 +1,11 @@
+{
+    "configurations": [
+        {
+            "type": "fastapi",
+            "name": "Fastapi configuration",
+            "module": "",
+            "application": "",
+        },
+        
+    ]
+}
