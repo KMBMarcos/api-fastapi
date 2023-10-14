@@ -10,4 +10,4 @@ from pymongo import MongoClient
 #db_client = MongoClient().local
 
 # Base de datos remota
-db_client = MongoClient("mongodb+srv://marcosmateot:0SDZ0NYk7zKqkFGU@cluster0.7frsrtk.mongodb.net/?retryWrites=true&w=majority").test
+db_client = MongoClient("mongodb+srv://<USERNAME>:0SDZ0NYk7zKqkFGU@cluster0.7frsrtk.mongodb.net/?retryWrites=true&w=majority").test
