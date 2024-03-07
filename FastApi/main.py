@@ -11,38 +11,36 @@
 
 # Importacion de librerias
 from fastapi import FastAPI
-from routers import products, users, basic_auth_users,jwt_auth_users,users_db
+from routers import products, users, basic_auth_users, jwt_auth_users, users_db
 from fastapi.staticfiles import StaticFiles
 
 
 # Intancia de FastAPI
-app = FastAPI(prefix="/main",
-                tags=["main"],
-                responses={404:{"message":"No encontrado"}})
+app = FastAPI(
+    prefix="/main", tags=["main"], responses={404: {"message": "No encontrado"}}
+)
 
 
 # routers
-app.include_router(products.router) # router de products
-app.include_router(users.router) # router de users
-app.include_router(basic_auth_users.router) # router de basic auth
-app.include_router(jwt_auth_users.router) # router de jwt auth
-app.include_router(users_db.router) # router de users_db
-app.mount("/static", 
-          StaticFiles(directory="static"),
-          name="static"
-          )
+app.include_router(products.router)  # router de products
+app.include_router(users.router)  # router de users
+app.include_router(basic_auth_users.router)  # router de basic auth
+app.include_router(jwt_auth_users.router)  # router de jwt auth
+app.include_router(users_db.router)  # router de users_db
+app.mount("/static", StaticFiles(directory="static"), name="static")
 
 
 # URl: https://fastapi-3-z9027211.deta.app/
+
 
 @app.get("/")
 async def root():
     return "Hola FastAPI!!"
 
+
 # Url: https://fastapi-3-z9027211.deta.app/
+
 
 @app.get("/url")
 async def root():
-    return { "url_curso":"https://jayhcourse.net/python" }
-
-
+    return {"url_curso": "https://jayhcourse.net/python"}
